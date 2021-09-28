@@ -9,23 +9,7 @@ import './index.css';
 
 export default function OutlinedCard() {
   const [checkBotton, setCheckBotton] = useState(true);
-  // const [checkHeart, setCheckHeart] = useState(true);
-
-  // function VerifyHeart() {
-  //   if (checkHeart) {
-  //     return (
-  //       <span class="image2" style={{ display: "flex", justifyContent: "end"}}>
-  //         <img onClick={() => setCheckHeart()} src={black} />
-  //       </span>
-  //     )
-  //   } else {
-  //     return (
-  //       <span class="image2" style={{ display: "flex", justifyContent: "end" }}>
-  //         <img src={red} />
-  //       </span>
-  //     )
-  //   }
-  // }
+  
 
   function verifyBottonContent() {
     if (checkBotton) {
@@ -45,7 +29,6 @@ export default function OutlinedCard() {
 
   useEffect(() => {
     verifyBottonContent()
-    // VerifyHeart()
   }, [])
 
   return (
@@ -62,7 +45,6 @@ export default function OutlinedCard() {
                     <div  class="image">
                       {
                         <>
-                          {/* <VerifyHeart /> */}
                           <img  class="principal" style={{ padding: 22, maxWidth: 220 }} src={dados.image} />
                         </>
 
